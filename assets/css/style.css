@@ -419,15 +419,15 @@ i.fa-solid.fa-chevron-right.last {
 }
 
 .tech-savvy {
-  background-image: url(/assets/images/Trending_1.png);
+  background-image: url(../images/Trending_1.png);
   border: 2px solid rgba(255, 255, 255, 0.56);
 }
 .dradient-delight {
-  background-image: url(/assets/images/Trending_2.png);
+  background-image: url(../images/Trending_2.png);
   border: 2px solid rgba(255, 255, 255, 0.56);
 }
 .nature-inspired {
-  background-image: url(/assets/images/Trending_3.png);
+  background-image: url(assets/images/Trending_3.png);
   border: 2px solid rgba(255, 255, 255, 0.56);
 }
 .futuristic-vibes {
