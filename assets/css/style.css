@@ -386,22 +386,22 @@ i.fa-solid.fa-chevron-right.last {
 }
 
 .kafelki_1 {
-  background-image: url(/assets/images/Trending_1.png);
+  background-image: url(../images/Trending_1.png);
 }
 .kafelki_2 {
-  background-image: url(/assets/images/Trending_2.png);
+  background-image: url(../images/Trending_2.png);
 }
 .kafelki_3 {
-  background-image: url(/assets/images/Trending_3.png);
+  background-image: url(../images/Trending_3.png);
 }
 .kafelki_4 {
-  background-image: url(/assets/images/Trending_4.png);
+  background-image: url(../images/Trending_4.png);
 }
 .kafelki_5 {
-  background-image: url(/assets/images/Trending_5.png);
+  background-image: url(../images/Trending_5.png);
 }
 .kafelki_6 {
-  background-image: url(/assets/images/Trending_6.png);
+  background-image: url(../images/Trending_6.png);
 }
 
 .box {
@@ -427,19 +427,19 @@ i.fa-solid.fa-chevron-right.last {
   border: 2px solid rgba(255, 255, 255, 0.56);
 }
 .nature-inspired {
-  background-image: url(assets/images/Trending_3.png);
+  background-image: url(../images/Trending_3.png);
   border: 2px solid rgba(255, 255, 255, 0.56);
 }
 .futuristic-vibes {
-  background-image: url(/assets/images/Trending_4.png);
+  background-image: url(../images/Trending_4.png);
   border: 2px solid rgba(255, 255, 255, 0.56);
 }
 .bold-typography {
-  background-image: url(/assets/images/Trending_5.png);
+  background-image: url(../images/Trending_4.png);
   border: 2px solid rgba(255, 255, 255, 0.56);
 }
 .vintage-charm {
-  background-image: url(/assets/images/Trending_6.png);
+  background-image: url(../images/Trending_6.png);
   border: 2px solid rgba(255, 255, 255, 0.56);
 }
 
@@ -625,7 +625,7 @@ button:active {
   border-radius: 55px;
 }
 .blog_background_img {
-  background-image: url(/assets/images/blog_back.png);
+  background-image: url(../images/blog_back.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
