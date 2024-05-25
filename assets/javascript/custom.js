@@ -98,25 +98,20 @@
   document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('#navbar');
     const toggleButton = document.querySelector('.mobile-nav-toggle');
-  
-    toggleButton.addEventListener('click', function() {
+
+    toggleButton.addEventListener('click', function () {
       navbar.classList.toggle('navbar-mobile');
-      this.classList.toggle('bi-list');
-      this.classList.toggle('bi-x');
     });
   });
-  
+
   on("click", ".mobile-nav-toggle", function (e) {
     select("#navbar").classList.toggle("navbar-mobile");
-    this.classList.toggle("bi-list");
-    this.classList.toggle("bi-x");
+
   });
 
-  document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+  document.querySelector('.mobile-nav-toggle').addEventListener('click', function () {
     var navbar = document.querySelector('#navbar');
     navbar.classList.toggle('navbar-mobile');
-    this.classList.toggle('bi-list');
-    this.classList.toggle('bi-x');
   });
 
   /**
@@ -153,52 +148,45 @@
     }
   });
 
-  /**
-   * Initiate gallery lightbox
-   */
-  // const galleryLightbox = GLightbox({
-  //   selector: '.gallery-lightbox'
-  // });
+  // ******************************************************* slider
+  $(".carousel-main").owlCarousel({
+    items: 3,
+    loop: true,
+    autoplay: false,
+    autoplayTimeout: 1500,
+    margin: 10,
+    nav: true,
+    dots: false,
+    navText: [
+      '<span class="fas fa-chevron-left fa-2x"></span>',
+      '<span class="fas fa-chevron-right fa-2x"></span>',
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      375: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+        merge: true,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  });
 
-  /**
-   * Animation on scroll
-   */
+
+  // ******************************************************* Animation on scroll
+
   window.addEventListener("load", () => {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
-      once: true,
-      mirror: false,
+      // once: true,
+      // mirror: false,
     });
   });
 })();
-
-// ******************************************************* slider
-$(".carousel-main").owlCarousel({
-  items: 3,
-  loop: true,
-  autoplay: false,
-  autoplayTimeout: 1500,
-  margin: 10,
-  nav: true,
-  dots: false,
-  navText: [
-    '<span class="fas fa-chevron-left fa-2x"></span>',
-    '<span class="fas fa-chevron-right fa-2x"></span>',
-  ],
-  responsive: {
-    0: {
-      items: 1,
-    },
-    375: {
-      items: 1,
-    },
-    600: {
-      items: 3,
-      merge: true,
-    },
-    1000: {
-      items: 3,
-    },
-  },
-});
